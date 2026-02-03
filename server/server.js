@@ -21,6 +21,10 @@ const app = express();
 app.use(express.json()); // Allows us to accept JSON data in the body
 app.use(cors());         // Allows frontend to talk to backend
 app.use(morgan("dev"));  // Logs requests to the console (good for debugging)
+
+// Make the uploads folder static so we can view images in browser
+app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/reports", reportRoutes);
 
@@ -32,8 +36,6 @@ app.get("/", (req, res) => {
 // 6. Start Server
 const PORT = process.env.PORT || 5000;
 
-// Make the uploads folder static so we can view images in browser
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
