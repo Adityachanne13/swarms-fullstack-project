@@ -1,22 +1,46 @@
-# SWaMRS - Smart Waste Management & Reporting System
+# SWaRMS (Smart Waste & Reporting Management System)
 
-## 🚀 Project Overview
-SWaMRS is a full-stack MERN application designed to streamline waste management in smart cities. It bridges the gap between citizens and municipal authorities, allowing for real-time reporting, geolocation tagging, and efficient task management.
+![Build Status](https://img.shields.io/badge/Status-Live-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Web-blue)
+![License](https://img.shields.io/badge/Copyright-2026-orange)
 
-## 🔮 Future Scope (Roadmap)
-While the current version handles the core reporting flow, the system is designed to scale with these future modules:
+![Project Screenshot](Screenshot.png)
 
-1.  **IoT Smart Bins Integration:**
-    * Integration with ultrasonic sensors (Arduino/ESP32) to automatically trigger reports when public bins reach 90% capacity.
-2.  **AI-Based Verification:**
-    * Implement Python/TensorFlow image recognition to automatically verify if an uploaded image actually contains waste before alerting workers.
-3.  **Route Optimization:**
-    * Use the Google Maps API "Directions Service" to generate the most fuel-efficient route for waste collection trucks based on pending report locations.
-4.  **Gamification:**
-    * "Green Points" system where citizens earn leaderboard points for verified reports, redeemable for municipal tax credits.
+## 🌐 Live Demo
+Click below to use the application:
+### 🚀 [**Launch SWaRMS App**](https://swarms-fullstack-project.vercel.app)
 
-## 🛠️ Tech Stack
-* **Frontend:** React.js, Tailwind CSS, Leaflet Maps
-* **Backend:** Node.js, Express.js
-* **Database:** MongoDB (Geospatial Data)
-* **Auth:** JWT (JSON Web Tokens)
+---
+
+## 💡 About The Project
+**SWaRMS** is a Full Stack solution designed to modernize municipal waste management. It bridges the gap between citizens and authorities by providing a real-time, geo-tagged reporting platform.
+
+I built this project to solve the issue of delayed waste collection. Unlike simple forms, this is a complete ecosystem that tracks a report from "Uploaded" to "Resolved," with a secure admin dashboard for management.
+
+---
+
+## 🛠️ Tech Stack & Features
+This application is built on the **MERN Stack** (MongoDB, Express, React, Node.js) to ensure scalability and speed.
+
+| Feature | Technology | Why I Used It |
+| :--- | :--- | :--- |
+| **Security** | **JWT (JSON Web Tokens)** | Custom-built stateless authentication system (No external tools). |
+| **Image Handling** | **Multer + Node.js** | Secure server-side processing of evidence photos. |
+| **Database** | **MongoDB Atlas** | Cloud-native NoSQL database for handling complex location data. |
+| **Frontend** | **React + Tailwind** | Mobile-first architecture for field usage. |
+
+---
+
+## 🔒 Copyright & License
+**Copyright © 2026 Aaditya M. Channe**
+
+This project is the intellectual property of Aaditya M. Channe.
+* **Recruiters/Viewers:** You are welcome to view the code and test the live demo to evaluate my skills.
+* **Restrictions:** Copying, cloning, or distributing this codebase for commercial use without permission is strictly prohibited.
+
+---
+
+## 👨‍💻 Author
+**Aaditya M. Channe**
+* **Role:** Full Stack Developer
+* **Location:** Maharashtra, India
