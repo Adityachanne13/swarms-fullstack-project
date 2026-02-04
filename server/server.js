@@ -23,7 +23,7 @@ app.use(cors());         // Allows frontend to talk to backend
 app.use(morgan("dev"));  // Logs requests to the console (good for debugging)
 
 // Make the uploads folder static so we can view images in browser
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/reports", reportRoutes);

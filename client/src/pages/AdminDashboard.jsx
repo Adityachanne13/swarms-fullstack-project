@@ -117,9 +117,7 @@ const AdminDashboard = () => {
                       </span>
                     </td>
                     <td className="px-6 py-4">
-                      <a href={`http://localhost:5000${report.image}`} target="_blank" rel="noreferrer" className="text-blue-500 hover:underline">
-                        View
-                      </a>
+                      <a href={`https://swarms-backend.onrender.com${report.image}`} target="_blank">View</a>
                     </td>
                     <td className="px-6 py-4">
                       {report.status === 'Pending' && (

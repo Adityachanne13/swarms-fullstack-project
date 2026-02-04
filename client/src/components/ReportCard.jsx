@@ -6,11 +6,11 @@ const ReportCard = ({ report }) => {
       
       {/* Image Section */}
       <div className="h-48 overflow-hidden bg-gray-200 relative">
-        <img 
-          src={`http://localhost:5000${report.image}`} 
-          alt="Waste Report" 
-          className="w-full h-full object-cover"
-        />
+      <img 
+        src={`https://swarms-backend.onrender.com${report.image}`} 
+        alt="Waste Report" 
+        className="w-full h-48 object-cover"
+      />
         {/* Status Badge */}
         <div className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide
           ${report.status === 'Resolved' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-800'}
