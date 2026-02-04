@@ -23,6 +23,8 @@ const Login = () => {
       toast.success('Login Successful!');
       
       localStorage.setItem('user', JSON.stringify(res.data));
+
+      localStorage.setItem('token', res.data.token);
       
       // Redirect based on role (Future proofing)
       if (res.data.role === 'admin') {
